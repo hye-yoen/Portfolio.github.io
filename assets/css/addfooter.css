@@ -1,0 +1,97 @@
+/* Contact Footer */
+#footer {
+    padding: 100px 40px;
+    background: #fff;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.contact-sub {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 60px;
+}
+
+/* grid */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 카드 */
+.contact-card {
+    background: #fafafa;
+    padding: 40px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+/* 원형 아이콘 */
+.contact-icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 20px auto;
+    background: #7f818a;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon i {
+    font-size: 35px;
+}
+
+.contact-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.contact-card a {
+    color: #a1a9d5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* copyright */
+.copyright-new {
+    margin-top: 60px;
+    color: #666;
+    font-size: 14px;
+}
+
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact-title {
+        font-size: 34px;
+    }
+}

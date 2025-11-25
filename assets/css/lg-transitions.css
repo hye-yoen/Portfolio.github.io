@@ -1,6 +1,6 @@
-/*! lightgallery - v1.3.7 - 2016-12-11
-* http://sachinchoolur.github.io/lightGallery/
-* Copyright (c) 2016 Sachin N; Licensed GPLv3 */
+/* ! lightgallery - v1.3.7 - 2016-12-11 */
+/* // http://sachinchoolur.github.io/lightGallery/ */
+/* // Copyright (c) 2016 Sachin N; Licensed GPLv3  */
 .lg-css3.lg-zoom-in .lg-item {
   opacity: 0; }
   .lg-css3.lg-zoom-in .lg-item.lg-prev-slide {
@@ -776,4 +776,4 @@
     -o-transition: -o-transform 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
     transition: transform 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s; }
 
-/*# sourceMappingURL=lg-transitions.css.map */
+/* # sourceMappingURL=lg-transitions.css.map */

@@ -1,7 +1,7 @@
-/**********************
- *CSS Animations by:
- *http://codepen.io/vivinantony
-***********************/
+
+ /* //CSS Animations by: */
+ /* //http://codepen.io/vivinantony */
+
 .spinner1 {
   width: 40px;
   height: 40px;
@@ -59,7 +59,7 @@
   position: absolute;
   -webkit-animation: bouncedelay 1.2s infinite ease-in-out;
   animation: bouncedelay 1.2s infinite ease-in-out;
-  /* Prevent first frame from flickering when animation starts */
+  /* // Prevent first frame from flickering when animation starts  */
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
