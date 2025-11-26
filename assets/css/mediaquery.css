@@ -17,7 +17,7 @@
 }
 @media (max-width:960px){
   #section1 {height:10722px;}
-  .main1 {height:1150px;}
+  .main1 {height:1150px; margin-top:30px;}
   
   .mo_box2 {width:480px;}
   .mo_box2 .box_text ul li {float: left; width:45%;}
@@ -39,7 +39,7 @@
   .sec {display:none;}
   .meq {display:block;}
   .sec_text1.me {position: absolute; left:98px; top:149px; z-index: 5;}
-  .sec_text2.me {position: absolute; left:95px; top:253px; z-index: 5;}
+  .sec_text2.me {position: absolute; left:95px; top:253px; z-index: 100;}
   .sec_text3.me {position: absolute; left:97px; top:310px; font-size:62px; line-height:71px; z-index: 5;}
   .sec_down.me {position: absolute; left:97px; top:560px; z-index: 5;}
   .sec_down.me a { width:34px; height:34px;}
@@ -104,7 +104,7 @@
   .mo_box3.img7 .mo_box3_3 { width: 188px; height: 303px;left:240px; top:0;}
 
   .container .menubar {top:20px}
-  
+  /* menu */
   .container .nav {display:none;}
  
   /* sub */
@@ -117,9 +117,9 @@
   .m_img1.sma2, .m_img2.sma2, .m_img3.sma2, .m_img4.sma2 {display:block;}
   
   .sec_text1.me {position: absolute; left:58px; top:75px; font-size:19px; line-height:21px }
-  .sec_text2.me {display:none;}
-  .sec_text3.me {position: absolute; left:117px; top:175px; font-size:48px; line-height:57px; font-weight:400;}
-  .sec_down.me {position: absolute; left:117px; top:440px;}
+  .sec_text2.me {position: absolute; left: 57px;}
+  .sec_text3.me {position: absolute; left:57px; top:175px; font-size:48px; line-height:57px; font-weight:400;}
+  .sec_down.me {position: absolute; left:64px; top:440px; z-index: 50;}
   
     
   .que_con1.me {width:328px; top: 760px; left:78px; }

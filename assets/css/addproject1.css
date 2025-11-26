@@ -1,0 +1,201 @@
+.skrollr-body{
+    position: relative;
+}
+
+.Hcontainer{
+    position: absolute;
+    top:100px;
+}
+
+/* 챗 지피티 */
+
+/* ---------------------------------------------------
+   컬러 테마
+--------------------------------------------------- */
+:root {
+    --yellow: #F2C94C;
+    --gray-light: #F7F7F7;
+    --gray-mid: #E0E0E0;
+    --gray-dark: #555;
+}
+
+/* ---------------------------------------------------
+   Hcontainer (position / top 절대 수정 X)
+--------------------------------------------------- */
+.Hcontainer {
+    /* 기존 position, top 유지 */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    max-width: 1100px;
+    font-family: "Pretendard", "Noto Sans KR", sans-serif;
+}
+
+/* ---------------------------------------------------
+   제목
+--------------------------------------------------- */
+.Hcontainer .title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* ---------------------------------------------------
+   카드 컨테이너 스타일
+--------------------------------------------------- */
+.HA, .HCalender, .HB, .HC, .HProblem {
+    background: var(--gray-light);
+    border-radius: 18px;
+    padding: 35px 40px;
+    margin-bottom: 45px;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+}
+
+
+/* ---------------------------------------------------
+   소개
+--------------------------------------------------- */
+.HText1 > span:first-child {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    border-left: 8px solid var(--yellow);
+    padding-left: 12px;
+}
+
+.HText1 p {
+    margin: 10px 0;
+    color: #444;
+    line-height: 1.6;
+}
+
+
+/* ---------------------------------------------------
+   링크 영역
+--------------------------------------------------- */
+.HLink {
+    margin-top: 20px;
+}
+
+.HLink div {
+    margin-bottom: 10px;
+}
+
+.HLink span:first-child {
+    font-weight: 600;
+    color: #444;
+}
+
+.HLink span:last-child {
+    color: #777;
+}
+
+
+/* ---------------------------------------------------
+   타임라인
+--------------------------------------------------- */
+.HCalender h3{
+    font-size: 16px;
+    font-weight: 320;
+    color: #333;
+    border-left: 5px solid var(--yellow);
+    padding-left: 12px;
+    margin-bottom: 30px;
+}
+.HCalender ul {
+    list-style: none;
+    padding-left: 0;
+    border-left: 5px solid var(--yellow);
+}
+
+.HCalender li {
+    padding: 12px 0 12px 18px;
+    position: relative;
+    color: #555;
+}
+
+.HCalender li::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: var(--yellow);
+    border-radius: 50%;
+    position: absolute;
+    left: -8px;
+    top: 14px;
+}
+
+
+/* ---------------------------------------------------
+   역할
+--------------------------------------------------- */
+.HP div:first-child {
+    font-size: 16px;
+    font-weight: 320;
+    color: #333;
+    border-left: 5px solid var(--yellow);
+    padding-left: 12px;
+}
+
+.HP div:last-child {
+    color: #444;
+    margin-bottom: 30px;
+}
+
+
+/* ---------------------------------------------------
+   기술 스택
+--------------------------------------------------- */
+.HSkill div:first-child {
+    font-size: 16px;
+    font-weight: 320;
+    color: #333;
+    border-left: 5px solid var(--yellow);
+    padding-left: 12px;
+}
+
+.HSkill div:last-child {
+    color: #444;
+}
+
+/* ---------------------------------------------------
+   주요 기능 목록
+--------------------------------------------------- */
+
+.HC div:first-child{
+    font-size: 16px;
+    font-weight: 320;
+    color: #333;
+    border-left: 5px solid var(--yellow);
+    padding-left: 12px;
+    margin-bottom: 15px;
+}
+
+/* ---------------------------------------------------
+   문제 해결
+--------------------------------------------------- */
+.HProblem > .Hname {
+    font-size: 16px;
+    font-weight: 320;
+    color: #333;
+    border-left: 5px solid var(--yellow);
+    padding-left: 12px;
+    margin-bottom: 15px;
+
+}
+.HProblem > .HText {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 6px solid var(--yellow);
+    margin-bottom: 18px;
+    color: #444;
+    line-height: 1.6;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+}
+
+
+
+

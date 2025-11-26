@@ -1,5 +1,7 @@
+
+
 /* === 기술 스택 전체 영역 === */
-.skills-section {
+/*.skills-section {
     padding: 80px 60px;
     font-family: "Noto Sans KR", sans-serif;
     background: #f9fafb;
@@ -18,69 +20,67 @@
     font-size: 18px;
     color: #666;
     margin-bottom: 50px;
-}
+}*/
 
 /* === 기술 카드 그리드 === */
-.skills-grid {
+/* .skills-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 32px;
-}
+} */
 
 /* === 각 기술 카드 === */
-.skill-item {
+/* .skill-item {
     background: #fff;
     padding: 28px 25px;
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0,0,0,0.06);
     transition: 0.25s ease;
     min-height: 260px;
-}
+} */
 
 /* hover 효과 */
-.skill-item:hover {
+/* .skill-item:hover {
     transform: translateY(-6px);
     box-shadow: 0px 8px 20px rgba(0,0,0,0.12);
-}
+} */
 
 /* 카드 제목 */
-.skill-item h3 {
+/* .skill-item h3 {
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 16px;
     color: #2e5aac;
-}
+} */
 
 /* 리스트 */
-.skill-item ul {
+/* .skill-item ul {
     list-style: none;
     padding: 0;
-}
+} */
 
-.skill-item li {
+/* .skill-item li {
     font-size: 16px;
     color: #333;
     line-height: 1.6;
     margin-bottom: 10px;
-}
+} */
 
 /* 주력/사용해봄 bold 처리 */
-.skill-item li strong {
+/* .skill-item li strong {
     color: #111;
     font-weight: 700;
-}
+} */
 
 
 
 /* === 기술 스택 반응형 (모바일/태블릿) === */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 
-    /* 전체 여백 축소 */
     .skills-section {
         padding: 40px 25px;
     }
 
-    /* 제목 크기 축소 */
     .section-title {
         font-size: 28px;
         margin-bottom: 10px;
@@ -91,13 +91,11 @@
         margin-bottom: 35px;
     }
 
-    /* 그리드 → 2열 */
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
 
-    /* 카드 스타일 축소 */
     .skill-item {
         padding: 22px 20px;
         min-height: 200px;
@@ -112,7 +110,121 @@
         font-size: 14px;
         margin-bottom: 8px;
     }
+} */
+
+
+/* ============================
+   기술 스택 섹션 전체 스타일
+=============================== */
+.skills-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: "Pretendard", "Noto Sans KR", sans-serif;
 }
+
+.section-title {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.section-sub {
+    text-align: center;
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+/* ============================
+   3열 그리드
+=============================== */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+/* ============================
+   카드 스타일
+=============================== */
+.skill-item {
+    background: #fff;
+    border-radius: 18px;
+    padding: 25px 25px 30px 25px;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+    transition: 0.25s;
+}
+
+.skill-item:hover {
+    box-shadow: 0 16px 35px rgba(0,0,0,0.12);
+    transform: translateY(-4px);
+}
+
+/* 제목 */
+.skill-item h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #333;
+}
+
+/* 리스트 */
+.skill-item ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.skill-item ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: #444;
+}
+
+/* ============================
+   기술 아이콘 스타일
+=============================== */
+.skill-item ul li::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+    border-radius: 10px;
+    background: #f7f7f7 url('') center/20px no-repeat;
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.08);
+}
+
+/* ============================
+   개별 아이콘 이미지 지정 (니가 원하는 대로 추가 가능)
+=============================== */
+
+/* Backend */
+.skill-item ul li:nth-child(1)::before { background-image: url('./icons/java.svg'); }
+.skill-item ul li:nth-child(2)::before { background-image: url('./icons/spring.svg'); }
+skill-item ul li:nth-child(3)::before { background-image: url('./icons/mysql.svg'); }
+.skill-item ul li:nth-child(4)::before { background-image: url('./icons/security.svg'); }
+.skill-item ul li:nth-child(5)::before { background-image: url('./icons/api.svg'); }
+
+/* 프리셋: 이미지 없으면 기본 네모 아이콘이라도 예쁘게 나옴 */
+
+@media (max-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .skills-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
 
 
 /* About Me */
