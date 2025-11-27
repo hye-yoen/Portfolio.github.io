@@ -13,6 +13,12 @@
   /* sub */
   .mo_box3.sub {width:90%; left:50%; margin-left:-45%;}
   .sns {left:30px; top:350px;}
+  .main2{
+    height: 1000px
+  }
+  .mock{
+    height: 800px;
+  }
   
 }
 @media (max-width:960px){

@@ -194,8 +194,9 @@
     height: 32px;
     margin-right: 12px;
     border-radius: 10px;
-    background: #f7f7f7 url('') center/20px no-repeat;
+    background: #FFFFFF url('') center/20px no-repeat;
     box-shadow: inset 0 0 3px rgba(0,0,0,0.08);
+    border: 1px solid #f7f7f7;
 }
 
 /* ============================
@@ -203,11 +204,36 @@
 =============================== */
 
 /* Backend */
-.skill-item ul li:nth-child(1)::before { background-image: url('./icons/java.svg'); }
-.skill-item ul li:nth-child(2)::before { background-image: url('./icons/spring.svg'); }
-skill-item ul li:nth-child(3)::before { background-image: url('./icons/mysql.svg'); }
-.skill-item ul li:nth-child(4)::before { background-image: url('./icons/security.svg'); }
-.skill-item ul li:nth-child(5)::before { background-image: url('./icons/api.svg'); }
+.skill-item.BN ul li:nth-child(1)::before { background-image: url('../img/svg/java.png'); }
+.skill-item.BN ul li:nth-child(2)::before { background-image: url('../img/svg/springboot.png'); }
+.skill-item.BN ul li:nth-child(3)::before { background-image: url('../img/svg/spring.png'); }
+.skill-item.BN ul li:nth-child(4)::before { background-image: url('../img/svg/springsecurity.png'); }
+.skill-item.BN ul li:nth-child(5)::before { background-image: url(''); }
+
+/* Frontend */
+.skill-item.FN ul li:nth-child(1)::before { background-image: url('../img/svg/react.png'); }
+.skill-item.FN ul li:nth-child(2)::before { background-image: url('../img/svg/html5.svg'); }
+.skill-item.FN ul li:nth-child(3)::before { background-image: url('../img/svg/css.svg'); }
+.skill-item.FN ul li:nth-child(4)::before { background-image: url('../img/svg/javascript.svg'); }
+
+/* Database */
+.skill-item.DATA ul li:nth-child(1)::before { background-image: url('../img/svg/mysql.svg'); }
+.skill-item.DATA ul li:nth-child(2)::before { background-image: url(''); }
+
+/* DEV */
+.skill-item.DEV ul li:nth-child(1)::before { background-image: url(''); }
+.skill-item.DEV ul li:nth-child(2)::before { background-image: url('../img/svg/linux.svg'); }
+.skill-item.DEV ul li:nth-child(3)::before { background-image: url('../img/svg/docker.svg'); }
+
+/* TOOL */
+.skill-item.TOOL ul li:nth-child(1)::before { background-image: url('../img/svg/git.svg'); }
+.skill-item.TOOL ul li:nth-child(2)::before { background-image: url(''); }
+.skill-item.TOOL ul li:nth-child(3)::before { background-image: url(''); }
+.skill-item.TOOL ul li:nth-child(4)::before { background-image: url(''); }
+.skill-item.TOOL ul li:nth-child(5)::before { background-image: url('../img/svg/IntelliJ.jpg'); }
+
+
+
 
 /* 프리셋: 이미지 없으면 기본 네모 아이콘이라도 예쁘게 나옴 */
 
@@ -223,6 +249,10 @@ skill-item ul li:nth-child(3)::before { background-image: url('./icons/mysql.svg
     }
 }
 
+.skill-t{
+    display: flex;
+    justify-content: end;
+}
 
 
 
@@ -399,3 +429,6 @@ skill-item ul li:nth-child(3)::before { background-image: url('./icons/mysql.svg
         margin-top: 30px;
     }
 }
+
+
+.box_text>.box_text_div{margin-top:15px;}

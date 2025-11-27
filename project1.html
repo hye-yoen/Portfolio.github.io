@@ -208,97 +208,135 @@
                             </div>
                             <!-- //main1-->
                         </div>
-                        <div>
-                            <div class="title">
-                                Hangle Project
+
+
+                        <div class="HMain">
+
+                            <div class="HMside">
+                                <ul>
+                                    <li><a href="#edu" class="side-link">소개</a></li>
+                                    <li><a href="#exp" class="side-link">타임라인</a></li>
+                                    <li><a href="#skills" class="side-link">역할</a></li>
+                                    <li><a href="#projects" class="side-link">주요 기능 목록</a></li>
+                                </ul>
                             </div>
-                            <!-- <div class="HA">
-                                <div class="HText1">
-                                    <span>소개</span>
-                                    <span>
+                            <div class="HMain-a">
+                                <h2 class="Htitle">Hangle Project</h2>
+
+                                <div class="Hblock">
+                                    <div class="Hicon"><i class="fa fa-info-circle"></i></div>
+                                    <div class="Hcontent">
+                                        <h3 class="Hblock-title">소개</h3>
+
                                         <p>Hangle은 Spring Boot와 React로 개발된 머신러닝 대회 플랫폼입니다.</p>
                                         <p>사용자는 각 대회에 참가하여 예측 결과 CSV를 제출하고, 자동 채점을 통해 리더보드에서 자신의 순위를 확인할 수 있습니다.</p>
                                         <p>JWT 기반 인증과 권한 관리, REST API 구조를 통해 안정적인 데이터 처리와 클라이언트–서버 간 통신을 제공합니다.</p>
-                                    </span>
-                                </div>
-                                <div class="HLink">
-                                    <div>
-                                        <span>배포 링크 : </span>
-                                        <span>나중에</span>
-                                    </div>
-                                    <div>
-                                        <span>GitHub Repository 링크 : </span>
-                                        <span>github 메인링크</span>
+
+
+                                        <div class="Hlinks">
+                                            <p><strong>배포 링크 :</strong> 나중에</p>
+                                            <p><strong>GitHub :</strong> github 메인링크</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div> -->
-                            <div class="Htop">
-                                <div class="Htop-img">
-                                    <img src="./assets/img/hangle_preview.png" alt="Hangle Project Preview">
-                                </div>
-
-                                <div class="Htop-text">
-                                    <div class="Htitle">Hangle Project</div>
-
-                                    <div class="Hdesc">
-                                        <p>Hangle은 Spring Boot와 React로 개발된 머신러닝 대회 플랫폼입니다.</p>
-                                        <p>사용자는 각 대회에 참가하여 예측 결과 CSV를 제출하고, 자동 채점을 통해 리더보드에서 순위를 확인할 수 있습니다.</p>
-                                        <p>JWT 기반 인증과 권한 관리, REST API 구조를 통해 안정적인 데이터 처리를 제공합니다.</p>
-                                    </div>
-
-                                    <div class="Hlink">
-                                        <p><strong>배포 링크 :</strong> 나중에</p>
-                                        <p><strong>GitHub :</strong> github 메인링크</p>
+                                <div class="Hblock">
+                                    <div class="Hcontent">
+                                        <h3 class="Hblock-title">타임라인</h3>
+                                        <ul class="Htimeline">
+                                            <li>2025.10.20 ~ : 프로젝트 기획 및 화면 설계</li>
+                                            <li>2025.11 : Spring Boot + MySQL 백엔드 구축 + React 프론트엔드 개발</li>
+                                            <li>2025.11 : Docker 기반 통합 테스트 및 배포</li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="HCalender">
-                                <h3>타임라인</h3>
-                                <ul>
-                                    <li>2025.10.20 ~ : 프로젝트 기획 및 화면 설계</li>
-                                    <li>2025.11 : Spring Boot + MySQL 백엔드 구축 + React 프론트엔드 개발</li>
-                                    <li>2025.11 : Docker 기반 통합 테스트 및 배포</li>
-                                </ul>
-                            </div>
-                            <div class="HB">
-                                <div class="HP">
-                                    <div>본인 역할(기여도) : </div>
-                                    <div>리더보드 내 최고 점수 관리, 재제출 처리, 실시간 순위 재계산, 검색·필터링(10%)</div>
+                                <div class="Hblock">
+                                    <div class="Hicon"><i class="fa fa-user-circle"></i></div>
+                                    <div class="Hcontent">
+                                        <h3 class="Hblock-title">역할 (기여도)</h3>
+                                        <p>리더보드 최고 점수 관리, 재제출 처리, 실시간 순위 재계산, 검색·필터링 기능 구현 (10%)</p>
+                                    </div>
                                 </div>
-                                <div class="HSkill">
-                                    <div>사용기술</div>
-                                    <div>React, Spring Boot, MySQL, Docker, Nginx, AWS EC2</div>
-                                </div>
-                            </div>
-                            <div class="HC">
-                                <div>주요 기능 목록</div>
-                                <div>나중에 할게요!!</div>
-                            </div>
-                            <div class="new1 more res add01" id="dynamic1">GIF</div>
-                            <div class="HProblem">
-                                <div class="Hname">문제점 개선</div>
-                                <div class="HText">
-                                    리더보드 검색 입력 시 결과가 변경되지 않는 문제가 발생했다.
-                                    조사 결과, 프론트엔드에서는 최초 로딩된 데이터만 상태에 저장해
-                                    검색 시 서버에 재요청하지 않고 정적 필터링을 시도하고 있었고,
-                                    검색어도 API 요청 URL에 전달되지 않는 구조였다.
-                                </div>
-                                <div class="HText">
-                                    이 문제를 해결하기 위해
-                                    검색 이벤트와 Axios 호출을 명확히 연결하고,
-                                    검색 시마다 최신 데이터를 서버에서 가져오는 구조로 변경했다.
-                                    그 결과 검색 기능이 정상적으로 동작했고
-                                    프론트–백엔드 간 데이터 전달 구조가 정리되었다.
-                                </div>
-                                <div class="HText">
-                                    개발 과정에서 프론트엔드 상태 관리와 API 연동 구조가 부족했다는 점을 깨달았고,
-                                    이후에는 기능 설계 단계에서 상태·이벤트·API 연동을 먼저 고려하는 방식으로 개선하였다.
-                                </div>
-                            </div>
+                                <div class="Hblock">
+                                    <div class="Hicon"><i class="fa fa-list-alt"></i></div>
+                                    <div class="Hcontent">
+                                        <h3 class="Hblock-title">주요 기능 목록</h3>
+                                        <table class="Htable">
+                                            <thead>
+                                                <tr>
+                                                    <th>구분</th>
+                                                    <th>사용기술</th>
+                                                </tr>
+                                            </thead>
 
+                                            <tbody>
+
+                                                <tr>
+                                                    <td>Frontend</td>
+                                                    <td>
+                                                        React 18, Axios, React Router, MUI
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Backend</td>
+                                                    <td>
+                                                        Spring Boot 3.x, JPA, Lombok, Spring Security, JWT
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Database</td>
+                                                    <td>
+                                                        MySQL 8.x
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>DevOps</td>
+                                                    <td>
+                                                        Docker, Docker Compose, Nginx, AWS EC2
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Tools</td>
+                                                    <td>
+                                                        IntelliJ, VSCode, GitHub, Postman
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                                <div class="new1 more res add01" id="dynamic1">GIF</div>
+                                <div class="Hblock">
+                                    <div class="Hicon"><i class="fa fa-wrench"></i></div>
+                                    <div class="Hcontent">
+                                        <h3 class="Hblock-title">문제 해결</h3>
+
+                                        <div class="Hproblem-box">
+                                            리더보드 검색 입력 시 결과가 변경되지 않는 문제가 발생했다. 조사 결과, 프론트엔드에서는 최초 로딩된 데이터만 상태에 저장해 검색 시
+                                            서버에 재요청하지 않고 정적 필터링을 시도하고 있었고, 검색어도 API 요청 URL에 전달되지 않는 구조였다.
+                                        </div>
+
+                                        <div class="Hproblem-box">
+                                            이 문제를 해결하기 위해 검색 이벤트와 Axios 호출을 명확히 연결하고, 검색 시마다 최신 데이터를 서버에서 가져오는 구조로 변경했다.
+                                            그 결과 검색 기능이 정상적으로 동작했고 프론트–백엔드 간 데이터 전달 구조가 정리되었다.
+                                        </div>
+
+                                        <div class="Hproblem-box">
+                                            개발 과정에서 프론트엔드 상태 관리와 API 연동 구조가 부족했다는 점을 깨달았고, 이후에는 기능 설계 단계에서 상태·이벤트·API
+                                            연동을 먼저 고려하는 방식으로 개선하였다.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
+
+
                 </div>
                 <!-- //section1-->
 
@@ -308,55 +346,55 @@
             <!-- //contents-->
             <div id="footer" class="contact">
 
-                <h2 class="contact-title">Contact Me</h2>
-                <p class="contact-sub">함께 성장하며 기여하는 개발자가 되겠습니다. 언제든 연락주세요.</p>
+				<h2 class="contact-title">Contact Me</h2>
+				<p class="contact-sub">함께 성장하며 기여하는 개발자가 되겠습니다. 언제든 연락주세요.</p>
 
-                <div class="contact-grid">
+				<div class="contact-grid">
 
-                    <!-- Address -->
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fa fa-map-marker"></i>
-                        </div>
-                        <h3>Address</h3>
-                        <p>Gyunggi</p>
-                    </div>
+					<!-- Address -->
+					<div class="contact-card">
+						<div class="contact-icon">
+							<i class="fa fa-map-marker"></i>
+						</div>
+						<h3>Address</h3>
+						<p>Gyunggi</p>
+					</div>
 
-                    <!-- Phone -->
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fa fa-phone"></i>
-                        </div>
-                        <h3>Phone</h3>
-                        <p>+82 10-6204-3412</p>
-                    </div>
+					<!-- Phone -->
+					<div class="contact-card">
+						<div class="contact-icon">
+							<i class="fa fa-phone"></i>
+						</div>
+						<h3>Phone</h3>
+						<p>+82 10-1234-9091</p>
+					</div>
 
-                    <!-- Email -->
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fa fa-envelope"></i>
-                        </div>
-                        <h3>Email</h3>
-                        <p>ysk0512@nate.com</p>
-                    </div>
+					<!-- Email -->
+					<div class="contact-card">
+						<div class="contact-icon">
+							<i class="fa fa-envelope"></i>
+						</div>
+						<h3>Email</h3>
+						<p>tgeelhy@gmail.com</p>
+					</div>
 
-                    <!-- Github -->
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fa fa-github"></i>
-                        </div>
-                        <h3>GitHub</h3>
-                        <p><a href="https://github.com/" target="_blank">Visit Profile</a></p>
-                    </div>
+					<!-- Github -->
+					<div class="contact-card">
+						<div class="contact-icon">
+							<i class="fa fa-github"></i>
+						</div>
+						<h3>GitHub</h3>
+						<p><a href="https://github.com/hye-yoen" target="_blank">Visit Profile</a></p>
+					</div>
 
-                </div>
+				</div>
 
-                <!-- 🔹 copyright (아래 고정) -->
-                <div class="copyright-new">
-                    <p>© 2025. All Rights Reserved.</p>
-                </div>
+				<!-- 🔹 copyright (아래 고정) -->
+				<div class="copyright-new">
+					<p>© 2025. All Rights Reserved.</p>
+				</div>
 
-            </div>
+			</div>
 
 
         </div>
@@ -378,6 +416,7 @@
 
 
     <script>
+        //right메뉴
         var s = skrollr.init();
         var dot = $("#dot > ul > li");
         var nav = $(".nav > li");
@@ -390,21 +429,45 @@
             $("#openmenu").removeClass("on");
         });
 
+        const sidebar = document.querySelector(".HMside");
+        const hmain = document.querySelector(".HMain");
 
+        window.addEventListener("scroll", () => {
+            const hmainTop = hmain.offsetTop;
+            const scrollY = window.scrollY;
 
-        $('#dynamic1').on('click', function () {
+            if (scrollY >= hmainTop) {
+                sidebar.classList.add("fixed");
 
-            $(this).lightGallery({
-                mode: 'lg-fade',
-                dynamic: true,
-                dynamicEl: [{
-                    "src": 'assets/img/responsive1.jpg',
-                    'thumb': 'assets/img/responsive1.jpg',
+                // HMain의 실제 화면 위치 기반으로 계산
+                const hmainLeft = hmain.getBoundingClientRect().left + window.scrollX;
 
-                }]
-            })
-
+                // 사이드바는 HMain 왼쪽 위치에 고정
+                sidebar.style.left = hmainLeft + "px";
+            } else {
+                sidebar.classList.remove("fixed");
+                sidebar.style.left = "0";
+            }
         });
+
+
+
+
+
+
+        // $('#dynamic1').on('click', function () {
+
+        //     $(this).lightGallery({
+        //         mode: 'lg-fade',
+        //         dynamic: true,
+        //         dynamicEl: [{
+        //             "src": 'assets/img/responsive1.jpg',
+        //             'thumb': 'assets/img/responsive1.jpg',
+
+        //         }]
+        //     })
+
+        // });
 
 
     </script>

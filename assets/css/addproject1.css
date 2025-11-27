@@ -26,176 +26,209 @@
     /* 기존 position, top 유지 */
     left: 50%;
     transform: translateX(-50%);
-    width: 75%;
+    width: 1100px;
     max-width: 1100px;
     font-family: "Pretendard", "Noto Sans KR", sans-serif;
+    height: auto;
 }
 
-/* ---------------------------------------------------
-   제목
---------------------------------------------------- */
-.Hcontainer .title {
+
+/* =========================================================
+   HMain 전체 구조
+========================================================= */
+
+.HMain {
+    font-family: "Pretendard", "Noto Sans KR", sans-serif;
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+}
+
+/* 사이드 메뉴 */
+.HMside {
+    position: absolute;
+    left: 0;  /* HMain 기준 왼쪽으로 자연스럽게 배치 */
+    top: 0;
+    width: 25%;
+}
+
+.HMside.fixed {
+    position: fixed;
+    top: 150px;
+    /* left는 JS에서 계산해서 넣음 */
+    transform: none; /* 중요! 기존 transform 삭제 */
+}
+
+
+.HMside ul {
+    list-style: none;
+    padding: 0;
+}
+
+.HMside li {
+    margin-bottom: 20px;
+}
+
+.HMside .side-link {
+    font-size: 18px;
+    color: #444;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.HMside .side-link.active {
+    color: #2962ff;
+    font-weight: 700;
+}
+
+
+/* ==============================
+   HMain-a 공통 레이아웃
+============================== */
+/* 메인 글 영역 */
+.HMain-a {
+    margin-left: 25%;
+    padding-top: 40px;
+    max-width: 900px;
+}
+
+/* 제목 */
+.Htitle {
     font-size: 32px;
     font-weight: 700;
-    color: #333;
     margin-bottom: 40px;
-    text-align: center;
+    color: #222;
 }
 
-/* ---------------------------------------------------
-   카드 컨테이너 스타일
---------------------------------------------------- */
-.HA, .HCalender, .HB, .HC, .HProblem {
-    background: var(--gray-light);
-    border-radius: 18px;
-    padding: 35px 40px;
-    margin-bottom: 45px;
-    box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+/* ==============================
+   Hblock (Education 스타일 박스)
+============================== */
+.Hblock {
+    display: flex;
+    gap: 20px;
+    padding: 25px 20px 30px 20px;
+    border-bottom: 1px solid #e9e9e9;
 }
 
-
-/* ---------------------------------------------------
-   소개
---------------------------------------------------- */
-.HText1 > span:first-child {
-    font-size: 24px;
-    font-weight: 500;
-    color: #333;
-    border-left: 8px solid var(--yellow);
-    padding-left: 12px;
+.Hblock:last-child {
+    border-bottom: none;
 }
 
-.HText1 p {
-    margin: 10px 0;
-    color: #444;
-    line-height: 1.6;
+/* ==============================
+   아이콘 영역
+============================== */
+.Hicon {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    border-radius: 50%;
+    background: #eef3ff;
+    color: #2962ff;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
-/* ---------------------------------------------------
-   링크 영역
---------------------------------------------------- */
-.HLink {
-    margin-top: 20px;
+/* ==============================
+   내용(Text) 영역
+============================== */
+.Hcontent {
+    flex: 1;
 }
 
-.HLink div {
+.Hblock-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
     margin-bottom: 10px;
 }
 
-.HLink span:first-child {
-    font-weight: 600;
-    color: #444;
-}
-
-.HLink span:last-child {
-    color: #777;
-}
-
-
-/* ---------------------------------------------------
-   타임라인
---------------------------------------------------- */
-.HCalender h3{
-    font-size: 16px;
-    font-weight: 320;
-    color: #333;
-    border-left: 5px solid var(--yellow);
-    padding-left: 12px;
-    margin-bottom: 30px;
-}
-.HCalender ul {
-    list-style: none;
+/* 타임라인 리스트 */
+.Htimeline {
     padding-left: 0;
-    border-left: 5px solid var(--yellow);
+    list-style: none;
 }
 
-.HCalender li {
-    padding: 12px 0 12px 18px;
-    position: relative;
+.Htimeline li {
+    margin-bottom: 8px;
     color: #555;
 }
 
-.HCalender li::before {
-    content: "";
-    width: 12px;
-    height: 12px;
-    background: var(--yellow);
-    border-radius: 50%;
-    position: absolute;
-    left: -8px;
-    top: 14px;
-}
-
-
-/* ---------------------------------------------------
-   역할
---------------------------------------------------- */
-.HP div:first-child {
-    font-size: 16px;
-    font-weight: 320;
-    color: #333;
-    border-left: 5px solid var(--yellow);
-    padding-left: 12px;
-}
-
-.HP div:last-child {
-    color: #444;
-    margin-bottom: 30px;
-}
-
-
-/* ---------------------------------------------------
-   기술 스택
---------------------------------------------------- */
-.HSkill div:first-child {
-    font-size: 16px;
-    font-weight: 320;
-    color: #333;
-    border-left: 5px solid var(--yellow);
-    padding-left: 12px;
-}
-
-.HSkill div:last-child {
+/* 링크 영역 */
+.Hlinks p {
+    margin: 6px 0;
     color: #444;
 }
 
-/* ---------------------------------------------------
-   주요 기능 목록
---------------------------------------------------- */
 
-.HC div:first-child{
-    font-size: 16px;
-    font-weight: 320;
-    color: #333;
-    border-left: 5px solid var(--yellow);
-    padding-left: 12px;
-    margin-bottom: 15px;
+/* ==============================
+   기능 목록 테이블
+============================== */
+.Htable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 15px;
 }
 
-/* ---------------------------------------------------
-   문제 해결
---------------------------------------------------- */
-.HProblem > .Hname {
-    font-size: 16px;
-    font-weight: 320;
-    color: #333;
-    border-left: 5px solid var(--yellow);
-    padding-left: 12px;
-    margin-bottom: 15px;
-
+.Htable thead {
+    background: #f1f4ff;
 }
-.HProblem > .HText {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 12px;
-    border-left: 6px solid var(--yellow);
-    margin-bottom: 18px;
+
+.Htable th {
+    padding: 12px 10px;
+    font-weight: 700;
+    text-align: left;
+    border-bottom: 2px solid #d5ddff;
+    color: #2746d1;
+}
+
+.Htable td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #e5e5e5;
+    vertical-align: top;
     color: #444;
-    line-height: 1.6;
-    box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+    line-height: 1.55;
+}
+
+/* 기능 구분 컬럼 강조 */
+.Htable td:first-child {
+    width: 160px;
+    font-weight: 600;
+    color: #222;
+}
+
+/* 모바일 대응 */
+@media (max-width: 768px) {
+    .Htable td:first-child {
+        width: auto;
+        display: block;
+        margin-bottom: 6px;
+    }
+
+    .Htable td {
+        display: block;
+    }
+
+    .Htable tr {
+        margin-bottom: 16px;
+        display: block;
+    }
 }
 
 
 
-
+/* ==============================
+   문제 해결 박스
+============================== */
+.Hproblem-box {
+    background: #fff;
+    padding: 15px 18px;
+    border-left: 5px solid #2962ff;
+    border-radius: 6px;
+    margin-bottom: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    line-height: 1.55;
+    color: #444;
+}

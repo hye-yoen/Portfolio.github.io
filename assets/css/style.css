@@ -20,7 +20,7 @@ body {background-color:#f4f4f4; }
 .main12{height: 1000px;}
 .main2{
   height: auto;
-  min-height: 1100px;
+  min-height: 700px;
 }
 
 
@@ -129,7 +129,7 @@ body {background-color:#f4f4f4; }
 #dot.fadeOut {opacity: 0; transform: translateY(-100%);} */
 
 /* mock */
-.mock {position: relative; height:700px;}
+.mock {position: relative; height:500px;}
 
 .mock.mock2 {padding-top:20%;}
 .mock.mock3 {padding-top:20%;}
