@@ -202,7 +202,7 @@
 
                             <div class="HMain">
 
-                                <div  class="HMside">
+                                <div class="HMside">
                                     <ul>
                                         <li><a href="#edu" class="side-link">소개</a></li>
                                         <li><a href="#time" class="side-link">타임라인</a></li>
@@ -558,6 +558,7 @@
         ------------------------------ */
         if (window.innerWidth >= 1100) {
 
+            const mainbar = document.querySelector(".HMain-a");
             const sidebar = document.querySelector(".HMside");
             const mainBox = document.querySelector(".HMain");
             const links = document.querySelectorAll(".side-link");
@@ -577,8 +578,10 @@
                 /* ===== 사이드바 고정 처리 ===== */
                 if (mainRect.top <= 150) {
                     sidebar.classList.add("fixed");
+                    mainbar.classList.add("fixed");
                 } else {
                     sidebar.classList.remove("fixed");
+                    mainbar.classList.remove("fixed");
                 }
 
                 /* ===== HMain 벗어나면 숨김 ===== */
@@ -592,17 +595,28 @@
 
                 /* ===== active ===== */
                 let activeId = "";
-                const triggerLine = window.innerHeight * 0.1; // 화면 중앙
+                let minDistance = Infinity;
+
+                // 화면 10% 위치
+                const triggerLine = window.innerHeight * 0.1;
 
                 sectionMap.forEach(({ id, el }) => {
                     const rect = el.getBoundingClientRect();
 
-                    // 중앙 기준에서 active 판정
-                    if (sectionCenter >= triggerLine - 50 && sectionCenter <= triggerLine + 50) {
+                    // 섹션 중앙값
+                    const sectionCenter = rect.top + rect.height / 2;
+
+                    // 화면 10% 위치와의 거리 계산
+                    const distance = Math.abs(sectionCenter - triggerLine);
+
+                    // 가장 가까운 섹션 선택
+                    if (distance < minDistance) {
+                        minDistance = distance;
                         activeId = id;
                     }
                 });
 
+                // active 적용
                 links.forEach(link => {
                     link.classList.remove("active");
                     if (link.getAttribute("href") === `#${activeId}`) {

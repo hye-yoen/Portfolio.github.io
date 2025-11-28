@@ -8,13 +8,15 @@
 
 
 .HMside{
-    background-color:orange ;
-    width: 25%;
+    padding-left: 30px;
+    width: 20%;
     height: 100%;
 }
 
 .HMside.fixed {
     position: fixed;
+    top: 100px;
+    width: 17%;
 }
 
 .HMside ul {
@@ -51,8 +53,14 @@
 /* 메인 글 영역 */
 .HMain-a {
     padding-top: 40px;
-    padding-left: 40px; /* 여백 */
-    flex: 1;            /* 남은 너비 전부 사용 */
+    width: 80%;            /* 남은 너비 전부 사용 */
+}
+
+.HMain-a.fixed{
+    padding-top: 40px;
+    padding-left: 50px;
+    width: 80%;
+    margin-left: 20% ;
 }
 
 /* 제목 */
