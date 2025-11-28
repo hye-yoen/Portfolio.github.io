@@ -1,77 +1,20 @@
-.skrollr-body{
-    position: relative;
-}
-
-.Hcontainer{
-   position: relative;
-    top:100px;
-}
-#section11 { height: auto !important;}
-
-
-/* 챗 지피티 */
-
-/* ---------------------------------------------------
-   컬러 테마
---------------------------------------------------- */
-:root {
-    --yellow: #F2C94C;
-    --gray-light: #F7F7F7;
-    --gray-mid: #E0E0E0;
-    --gray-dark: #555;
-}
-
-/* ---------------------------------------------------
-   Hcontainer (position / top 절대 수정 X)
---------------------------------------------------- */
-.Hcontainer {
-    /* 기존 position, top 유지 */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1100px;
-    max-width: 1100px;
-    font-family: "Pretendard", "Noto Sans KR", sans-serif;
-    height: auto;
-}
-
-
-/* =========================================================
-   HMain 전체 구조
-========================================================= */
-
-.Hcontainer2{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: auto;
-    margin-top:  0 !important; /* 패럴랙스와 안전한 간격 */
-}
+/* wrap,skrollr-body ,contents*/
+/* section11 , Hcontainer */
 .HMain {
-    font-family: "Pretendard", "Noto Sans KR", sans-serif;
-    max-width: 1100px;
-    width: 100%;
     display: flex;
-    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;     
 }
 
-/* 사이드 메뉴 */
-.HMside {
-    position: absolute;
-    right: 100%;      /* ★ HMain의 왼쪽에 딱 붙음 */
-    margin-right: 40px; /* ★ HMain과 사이드바 사이 여백(px는 여긴 안전함) */
-    top: 0;
-    width: 240px;
-    transition: opacity 0.3s ease;
+
+.HMside{
+    background-color:orange ;
+    width: 25%;
+    height: 100%;
 }
 
 .HMside.fixed {
     position: fixed;
-    top: 150px;
-    left: calc(50% + 1100px/2 - 240px); /* ★ 사이드바 정중앙 기준 고정 */
-    z-index: 9999;
-
-    max-height: 70vh;   /* 스크롤 짧을 때 메뉴 전체 보이도록 */
-    overflow-y: auto;   /* 내부 스크롤 */
 }
 
 .HMside ul {
@@ -96,16 +39,20 @@
     font-weight: 700;
 }
 
+/* 클릭 했을 경우 */
+#edu, #time, #role, #object, #problems {
+    scroll-margin-top: 200px; /* 숫자는 원하는 위치로 조절 가능 */
+}
+
 
 /* ==============================
    HMain-a 공통 레이아웃
 ============================== */
 /* 메인 글 영역 */
 .HMain-a {
-    margin-left: 25%;
     padding-top: 40px;
-    max-width: 900px;
     padding-left: 40px; /* 여백 */
+    flex: 1;            /* 남은 너비 전부 사용 */
 }
 
 /* 제목 */
@@ -247,4 +194,121 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     line-height: 1.55;
     color: #444;
+}
+
+
+
+/* =========================================================
+   📌 1100px 이하 (태블릿)
+   → HMain 전체가 1열로 바뀜 (사이드 메뉴가 위로 올라감)
+========================================================= */
+@media (max-width: 1100px) {
+
+    .HMain {
+        flex-direction: column;     /* 좌우 → 상하 */
+        gap: 20px;
+        max-width: 95%;             /* 화면 가득 사용 */
+        margin: 0 auto;
+    }
+
+    .HMside {
+        position: relative !important; /* sticky/fixed 모두 무시 */
+        top: 0;
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;    /* 메뉴 가운데 정렬 */
+        background: none;
+    }
+
+    .HMside ul {
+        display: flex;
+        gap: 20px;                  /* 가로로 펼침 */
+    }
+
+    .HMside li {
+        margin-bottom: 0;           /* 가로에서는 margin-bottom 필요 없음 */
+    }
+
+    .HMain-a {
+        padding-left: 0;            /* 왼쪽 여백 제거 */
+        padding-top: 10px;
+    }
+}
+
+/* =========================================================
+   📌 768px 이하 (모바일)
+   → 좌우 메뉴 너비 줄이고 글자 크기 조정
+========================================================= */
+@media (max-width: 768px) {
+
+    .HMside ul {
+        flex-wrap: wrap;                   /* 2줄로 떨어지게 허용 */
+        gap: 12px;
+    }
+
+    .HMside .side-link {
+        font-size: 15px;                   /* 모바일 최적 크기 */
+    }
+
+    .Htitle {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    .Hblock {
+        flex-direction: column;            /* 아이콘 + 텍스트 → 세로 정렬 */
+        padding: 20px 15px;
+    }
+
+    .Hicon {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+    }
+
+    .Hblock-title {
+        font-size: 18px;
+    }
+
+    .Htable th, 
+    .Htable td {
+        font-size: 14px;
+        padding: 10px 8px;
+    }
+
+}
+
+/* =========================================================
+   📌 480px 이하 (초소형 모바일)
+========================================================= */
+@media (max-width: 480px) {
+
+    .HMside ul {
+        gap: 8px;
+    }
+
+    .HMside .side-link {
+        font-size: 14px;
+    }
+
+    .Htitle {
+        font-size: 22px;
+    }
+
+    .Hicon {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .Hblock {
+        padding: 15px 10px;
+    }
+
+    .Hproblem-box {
+        font-size: 14px;
+        padding: 12px 14px;
+    }
 }

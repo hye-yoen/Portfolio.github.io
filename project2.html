@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/css/font-awesome.css">
     <link rel="stylesheet" href="assets/css/lg-transitions.css">
     <link rel="stylesheet" href="assets/css/lightgallery.css">
-    <link rel="stylesheet" href="assets/css/addproject1.css">
+    <link rel="stylesheet" href="assets/css/addproject2.css">
     <link rel="stylesheet" href="assets/css/addfooter.css">
 
 
@@ -63,8 +63,7 @@
                         <!-- <span class="ir">Wlogo</span> -->
                     </h1>
                     <ul class="nav clearfix">
-                        <li><a href="./index.html">메인</a></li>
-                        <li><a href="./">README</a></li>
+                        <li><a href="./index.html">메인페이지</a></li>
                     </ul>
                     <p class="menubar"><span class="ir">bar</span></p>
                 </div>
@@ -82,21 +81,21 @@
 					<li><a href="svgindex.html">SVG.</a></li>
 				</ul> -->
                 <ul class="open_li2">
-                    <li><a href="./index.html">메인</a></li>
-                    <li><a href="./">README</a></li>
-                    <li><a href="#">메뉴1</a></li>
-                    <li><a href="#">메뉴2</a></li>
-                    <li><a href="#">메뉴3</a></li>
+                    <li><a href="./index.html">메인페이지</a></li>
                 </ul>
             </div>
             <!-- //rightmenu-->
             <!-- contents-->
             <div id="contents">
                 <!-- section1-->
-                <div id="section11">
-                    <div class="Hcontainer">
+                <div id="section1">
+                    <div class="section_img">
+                        <!-- 중간이미지 -->
+                    </div>
+                    <div class="container">
                         <div>
-                            <!-- main1-->
+
+                            <!-- header-->
                             <div class="main1" id="main1">
                                 <!-- 배경 제목 이미지들 -->
                                 <div class="m_img1"
@@ -172,7 +171,7 @@
                                         data-0="left:95px;top:298px;position:absolute;opacity:1;delayBefore:0;delay:0;-webkit-transform:rotate(0deg)scale(1)translateZ(0);transform:rotate(0deg)scale(1)translateZ(0);"
                                         data-10="left:95px;top:298px;position:absolute;opacity:1;delayBefore:0;delay:0;-webkit-transform:rotate(0deg)scale(1)translateZ(0);transform:rotate(0deg)scale(1)translateZ(0);"
                                         data-100="left:94px;top:298px;position:absolute;opacity:0;delayBefore:0;delay:0;-webkit-transform:rotate(0deg)scale(1)translateZ(0);transform:rotate(0deg)scale(1)translateZ(0);">
-                                        <a href="#">프로젝트 이동</a>
+                                        <a href="#edu">프로젝트 이동</a>
                                     </div>
                                     <div class="sec_text3"
                                         data-0="left:97px;top:430px;position:absolute;opacity:1;delayBefore:0;delay:0;-webkit-transform:rotate(0deg)scale(1)translateZ(0);transform:rotate(0deg)scale(1)translateZ(0);"
@@ -194,195 +193,204 @@
                                     <div class="sec_text3 me">Portfolio</div>
                                     <div class="sec_down me"><a href="#"><span class="ir">아래로 내리기</span></a></div>
                                 </div>
+
+
+
                             </div>
-                        </div>
 
+                            <!-- project main -->
+
+                            <div class="HMain">
+
+                                <div  class="HMside">
+                                    <ul>
+                                        <li><a href="#edu" class="side-link">소개</a></li>
+                                        <li><a href="#time" class="side-link">타임라인</a></li>
+                                        <li><a href="#role" class="side-link">역할</a></li>
+                                        <li><a href="#object" class="side-link">주요 기능 목록</a></li>
+                                        <li><a href="#problems" class="side-link">문제 해결</a></li>
+                                    </ul>
+                                </div>
+                                <div class="HMain-a">
+                                    <h2 class="Htitle">Hangle Project</h2>
+
+                                    <div class="Hblock">
+                                        <div class="Hicon"><i class="fa fa-info-circle"></i></div>
+                                        <div class="Hcontent" id="edu">
+                                            <h3 class="Hblock-title">소개</h3>
+
+                                            <p>Hangle은 Spring Boot와 React로 개발된 머신러닝 대회 플랫폼입니다.</p>
+                                            <p>사용자는 각 대회에 참가하여 예측 결과 CSV를 제출하고, 자동 채점을 통해 리더보드에서 자신의 순위를 확인할 수 있습니다.</p>
+                                            <p>JWT 기반 인증과 권한 관리, REST API 구조를 통해 안정적인 데이터 처리와 클라이언트–서버 간 통신을 제공합니다.</p>
+
+
+                                            <div class="Hlinks">
+                                                <p><strong>배포 링크 :</strong> 나중에</p>
+                                                <p><strong>GitHub :</strong> github 메인링크</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Hblock">
+                                        <div class="Hcontent" id="time">
+                                            <h3 class="Hblock-title">타임라인</h3>
+                                            <ul class="Htimeline">
+                                                <li>2025.10.20 ~ : 프로젝트 기획 및 화면 설계</li>
+                                                <li>2025.11 : Spring Boot + MySQL 백엔드 구축 + React 프론트엔드 개발</li>
+                                                <li>2025.11 : Docker 기반 통합 테스트 및 배포</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="Hblock">
+                                        <div class="Hicon"><i class="fa fa-user-circle"></i></div>
+                                        <div class="Hcontent" id="role">
+                                            <h3 class="Hblock-title">역할 (기여도)</h3>
+                                            <p>리더보드 최고 점수 관리, 재제출 처리, 실시간 순위 재계산, 검색·필터링 기능 구현 (10%)</p>
+                                        </div>
+                                    </div>
+                                    <div class="Hblock">
+                                        <div class="Hicon"><i class="fa fa-list-alt"></i></div>
+                                        <div class="Hcontent" id="object">
+                                            <h3 class="Hblock-title">주요 기능 목록</h3>
+                                            <table class="Htable">
+                                                <thead>
+                                                    <tr>
+                                                        <th>구분</th>
+                                                        <th>사용기술</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td>Frontend</td>
+                                                        <td>
+                                                            React 18, Axios, React Router, MUI
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Backend</td>
+                                                        <td>
+                                                            Spring Boot 3.x, JPA, Lombok, Spring Security, JWT
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Database</td>
+                                                        <td>
+                                                            MySQL 8.x
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>DevOps</td>
+                                                        <td>
+                                                            Docker, Docker Compose, Nginx, AWS EC2
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Tools</td>
+                                                        <td>
+                                                            IntelliJ, VSCode, GitHub, Postman
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                    <!-- <div class="new1 more res add01" id="dynamic1">GIF</div> -->
+                                    <div class="Hblock">
+                                        <div class="Hicon"><i class="fa fa-wrench"></i></div>
+                                        <div class="Hcontent" id="problems">
+                                            <h3 class="Hblock-title">문제 해결</h3>
+
+                                            <div class="Hproblem-box">
+                                                리더보드 검색 입력 시 결과가 변경되지 않는 문제가 발생했다. 조사 결과, 프론트엔드에서는 최초 로딩된 데이터만 상태에 저장해
+                                                검색 시
+                                                서버에 재요청하지 않고 정적 필터링을 시도하고 있었고, 검색어도 API 요청 URL에 전달되지 않는 구조였다.
+                                            </div>
+
+                                            <div class="Hproblem-box">
+                                                이 문제를 해결하기 위해 검색 이벤트와 Axios 호출을 명확히 연결하고, 검색 시마다 최신 데이터를 서버에서 가져오는 구조로
+                                                변경했다.
+                                                그 결과 검색 기능이 정상적으로 동작했고 프론트–백엔드 간 데이터 전달 구조가 정리되었다.
+                                            </div>
+
+                                            <div class="Hproblem-box">
+                                                개발 과정에서 프론트엔드 상태 관리와 API 연동 구조가 부족했다는 점을 깨달았고, 이후에는 기능 설계 단계에서
+                                                상태·이벤트·API
+                                                연동을 먼저 고려하는 방식으로 개선하였다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- footer -->
+                            <div id="footer" class="contact">
+
+                                <h2 class="contact-title">Contact Me</h2>
+                                <p class="contact-sub">함께 성장하며 기여하는 개발자가 되겠습니다. 언제든 연락주세요.</p>
+
+                                <div class="contact-grid">
+
+                                    <!-- Address -->
+                                    <div class="contact-card">
+                                        <div class="contact-icon">
+                                            <i class="fa fa-map-marker"></i>
+                                        </div>
+                                        <h3>Address</h3>
+                                        <p>Gyunggi</p>
+                                    </div>
+
+                                    <!-- Phone -->
+                                    <div class="contact-card">
+                                        <div class="contact-icon">
+                                            <i class="fa fa-phone"></i>
+                                        </div>
+                                        <h3>Phone</h3>
+                                        <p>+82 10-1234-9091</p>
+                                    </div>
+
+                                    <!-- Email -->
+                                    <div class="contact-card">
+                                        <div class="contact-icon">
+                                            <i class="fa fa-envelope"></i>
+                                        </div>
+                                        <h3>Email</h3>
+                                        <p>tgeelhy@gmail.com</p>
+                                    </div>
+
+                                    <!-- Github -->
+                                    <div class="contact-card">
+                                        <div class="contact-icon">
+                                            <i class="fa fa-github"></i>
+                                        </div>
+                                        <h3>GitHub</h3>
+                                        <p><a href="https://github.com/hye-yoen" target="_blank">Visit Profile</a></p>
+                                    </div>
+
+                                </div>
+
+                                <!-- 🔹 copyright (아래 고정) -->
+                                <div class="copyright-new">
+                                    <p>© 2025. All Rights Reserved.</p>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
 
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- 프로젝트 상세 + 사이드바 -->
-    <div class="Hcontainer2">
-        <div class="HMain">
 
-            <div class="HMside">
-                <ul>
-                    <li><a href="#edu" class="side-link">소개</a></li>
-                    <li><a href="#time" class="side-link">타임라인</a></li>
-                    <li><a href="#role" class="side-link">역할</a></li>
-                    <li><a href="#object" class="side-link">주요 기능 목록</a></li>
-                    <li><a href="#problems" class="side-link">문제 해결</a></li>
-                </ul>
-            </div>
-            <div class="HMain-a">
-                <h2 class="Htitle">Hangle Project</h2>
-
-                <div class="Hblock">
-                    <div class="Hicon"><i class="fa fa-info-circle"></i></div>
-                    <div class="Hcontent" id="edu">
-                        <h3 class="Hblock-title">소개</h3>
-
-                        <p>Hangle은 Spring Boot와 React로 개발된 머신러닝 대회 플랫폼입니다.</p>
-                        <p>사용자는 각 대회에 참가하여 예측 결과 CSV를 제출하고, 자동 채점을 통해 리더보드에서 자신의 순위를 확인할 수 있습니다.</p>
-                        <p>JWT 기반 인증과 권한 관리, REST API 구조를 통해 안정적인 데이터 처리와 클라이언트–서버 간 통신을 제공합니다.</p>
-
-
-                        <div class="Hlinks">
-                            <p><strong>배포 링크 :</strong> 나중에</p>
-                            <p><strong>GitHub :</strong> github 메인링크</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="Hblock">
-                    <div class="Hcontent" id="time">
-                        <h3 class="Hblock-title">타임라인</h3>
-                        <ul class="Htimeline">
-                            <li>2025.10.20 ~ : 프로젝트 기획 및 화면 설계</li>
-                            <li>2025.11 : Spring Boot + MySQL 백엔드 구축 + React 프론트엔드 개발</li>
-                            <li>2025.11 : Docker 기반 통합 테스트 및 배포</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="Hblock">
-                    <div class="Hicon"><i class="fa fa-user-circle"></i></div>
-                    <div class="Hcontent" id="role">
-                        <h3 class="Hblock-title">역할 (기여도)</h3>
-                        <p>리더보드 최고 점수 관리, 재제출 처리, 실시간 순위 재계산, 검색·필터링 기능 구현 (10%)</p>
-                    </div>
-                </div>
-                <div class="Hblock">
-                    <div class="Hicon"><i class="fa fa-list-alt"></i></div>
-                    <div class="Hcontent" id="object">
-                        <h3 class="Hblock-title">주요 기능 목록</h3>
-                        <table class="Htable">
-                            <thead>
-                                <tr>
-                                    <th>구분</th>
-                                    <th>사용기술</th>
-                                </tr>
-                            </thead>
-
-                            <tbody>
-
-                                <tr>
-                                    <td>Frontend</td>
-                                    <td>
-                                        React 18, Axios, React Router, MUI
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>Backend</td>
-                                    <td>
-                                        Spring Boot 3.x, JPA, Lombok, Spring Security, JWT
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>Database</td>
-                                    <td>
-                                        MySQL 8.x
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>DevOps</td>
-                                    <td>
-                                        Docker, Docker Compose, Nginx, AWS EC2
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>Tools</td>
-                                    <td>
-                                        IntelliJ, VSCode, GitHub, Postman
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </div>
-                <div class="new1 more res add01" id="dynamic1">GIF</div>
-                <div class="Hblock">
-                    <div class="Hicon"><i class="fa fa-wrench"></i></div>
-                    <div class="Hcontent" id="problems">
-                        <h3 class="Hblock-title">문제 해결</h3>
-
-                        <div class="Hproblem-box">
-                            리더보드 검색 입력 시 결과가 변경되지 않는 문제가 발생했다. 조사 결과, 프론트엔드에서는 최초 로딩된 데이터만 상태에 저장해 검색 시
-                            서버에 재요청하지 않고 정적 필터링을 시도하고 있었고, 검색어도 API 요청 URL에 전달되지 않는 구조였다.
-                        </div>
-
-                        <div class="Hproblem-box">
-                            이 문제를 해결하기 위해 검색 이벤트와 Axios 호출을 명확히 연결하고, 검색 시마다 최신 데이터를 서버에서 가져오는 구조로 변경했다.
-                            그 결과 검색 기능이 정상적으로 동작했고 프론트–백엔드 간 데이터 전달 구조가 정리되었다.
-                        </div>
-
-                        <div class="Hproblem-box">
-                            개발 과정에서 프론트엔드 상태 관리와 API 연동 구조가 부족했다는 점을 깨달았고, 이후에는 기능 설계 단계에서 상태·이벤트·API
-                            연동을 먼저 고려하는 방식으로 개선하였다.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- //contents-->
-    <div id="footer" class="contact">
-
-        <h2 class="contact-title">Contact Me</h2>
-        <p class="contact-sub">함께 성장하며 기여하는 개발자가 되겠습니다. 언제든 연락주세요.</p>
-
-        <div class="contact-grid">
-
-            <!-- Address -->
-            <div class="contact-card">
-                <div class="contact-icon">
-                    <i class="fa fa-map-marker"></i>
-                </div>
-                <h3>Address</h3>
-                <p>Gyunggi</p>
-            </div>
-
-            <!-- Phone -->
-            <div class="contact-card">
-                <div class="contact-icon">
-                    <i class="fa fa-phone"></i>
-                </div>
-                <h3>Phone</h3>
-                <p>+82 10-1234-9091</p>
-            </div>
-
-            <!-- Email -->
-            <div class="contact-card">
-                <div class="contact-icon">
-                    <i class="fa fa-envelope"></i>
-                </div>
-                <h3>Email</h3>
-                <p>tgeelhy@gmail.com</p>
-            </div>
-
-            <!-- Github -->
-            <div class="contact-card">
-                <div class="contact-icon">
-                    <i class="fa fa-github"></i>
-                </div>
-                <h3>GitHub</h3>
-                <p><a href="https://github.com/hye-yoen" target="_blank">Visit Profile</a></p>
-            </div>
-
-        </div>
-
-        <!-- 🔹 copyright (아래 고정) -->
-        <div class="copyright-new">
-            <p>© 2025. All Rights Reserved.</p>
-        </div>
-
-    </div>
 
 
     <!-- script--> <!-- 걍 script 패키지들 -->
@@ -401,6 +409,9 @@
 
 
     <script>
+
+
+        //header 부분
         var s = skrollr.init();
         var dot = $("#dot > ul > li");
         var nav = $(".nav > li");
@@ -540,162 +551,91 @@
 
         });
 
-
-
-
-
-
-
-
-        // const sidebar = document.querySelector(".HMside");
-        // const container = document.querySelector(".Hcontainer");
-        // const HMainStart = document.querySelector('.HMain').offsetTop;
-        // const HMainEnd = HMainStart + document.querySelector('.HMain').offsetHeight;
-
-        // window.addEventListener("scroll", () => {
-        //     const scrollY = window.scrollY;
-        //     const containerTop = container.offsetTop;
-
-        //     if (scrollY >= containerTop) {
-        //         sidebar.classList.add("fixed");
-
-        //         // ★ Hcontainer가 transform 적용된 상태에서도 정확한 left 계산
-        //         const containerLeft = container.getBoundingClientRect().left;
-        //         sidebar.style.left = containerLeft + "px";
-
-        //         if (scrollY < HMainStart - 200 || scrollY > HMainEnd -700) {
-        //             sidebar.style.opacity = "0";
-        //             sidebar.style.pointerEvents = "none";
-        //         } else {
-        //             sidebar.style.opacity = "1";
-        //             sidebar.style.pointerEvents = "auto";
-        //         }
-
-        //     } else {
-        //         sidebar.classList.remove("fixed");
-        //         sidebar.style.left = "0px";
-        //     }
-
-        // });
-
-        // const links = document.querySelectorAll('.side-link');
-        // const sections = document.querySelectorAll('.Hcontent');
-
-        // window.addEventListener('scroll', () => {
-        //     let current = "";
-
-        //     sections.forEach(section => {
-        //         const top = section.offsetTop - 200;
-        //         const bottom = top + section.offsetHeight;
-        //         if (scrollY >= top && scrollY < bottom) {
-        //             current = section.getAttribute('id');
-        //         }
-        //     });
-
-        //     links.forEach(link => {
-        //         link.classList.remove('active');
-        //         if (link.getAttribute('href') === `#${current}`) {
-        //             link.classList.add('active');
-        //         }
-        //     });
-        // });
-
-
-
+        //main 부분
+        //aside 부분 
         /* -----------------------------
-            공통 요소
+            PC 전용 스크립트 (1100px ↑)
         ------------------------------ */
-        const sidebar = document.querySelector(".HMside");
-        const container = document.querySelector(".Hcontainer");
-        const mainBox = document.querySelector(".HMain");
+        if (window.innerWidth >= 1100) {
 
-        const sectionMap = [
-            { id: "edu", el: document.getElementById("edu") },
-            { id: "time", el: document.getElementById("time") },
-            { id: "role", el: document.getElementById("role") },
-            { id: "object", el: document.getElementById("object") },
-            { id: "problems", el: document.getElementById("problems") }
-        ];
+            const sidebar = document.querySelector(".HMside");
+            const mainBox = document.querySelector(".HMain");
+            const links = document.querySelectorAll(".side-link");
 
+            const sectionMap = [
+                { id: "edu", el: document.getElementById("edu") },
+                { id: "time", el: document.getElementById("time") },
+                { id: "role", el: document.getElementById("role") },
+                { id: "object", el: document.getElementById("object") },
+                { id: "problems", el: document.getElementById("problems") }
+            ];
 
-        /* -----------------------------
-           스크롤 이벤트 통합
-        ------------------------------ */
-        window.addEventListener("scroll", () => {
-            const scrollY = window.scrollY;
-            const mainRect = mainBox.getBoundingClientRect();
-            const mainWidth = mainBox.offsetWidth;
+            window.addEventListener("scroll", () => {
 
-            const sidebarWidth = 240;  // 사이드바 너비 (너는 240px)
-            const gap = 40;            // HMain과 사이드바 간격 (원하면 조정 가능)
+                const mainRect = mainBox.getBoundingClientRect();
 
-            /* 사이드바 고정 처리 */
-            if (mainRect.top <= 150) {
-                sidebar.classList.add("fixed");
-
-                // ★ HMain의 실제 왼쪽 좌표에서 사이드바 폭 + 간격만큼 왼쪽으로 이동
-                sidebar.style.left = `${mainRect.left - sidebarWidth - gap}px`;
-
-            } else {
-                sidebar.classList.remove("fixed");
-                sidebar.style.left = "auto";
-            }
-
-
-            /* ===========================
-                🔥 수정 ③ : HMain 영역 벗어나면 숨김 
-                 rect.top/bottom 기준
-            ============================ */
-            if (mainRect.top > 150 || mainRect.bottom < 500) {
-                sidebar.style.opacity = "0";
-                sidebar.style.pointerEvents = "none";
-            } else {
-                sidebar.style.opacity = "1";
-                sidebar.style.pointerEvents = "auto";
-            }
-
-
-
-
-            /* ===========================
-               🔥 수정 ④ : active 강조 - rect 기반
-            ============================ */
-            let activeId = "";
-
-            sectionMap.forEach(({ id, el }) => {
-                const rect = el.getBoundingClientRect();
-                const triggerLine = window.innerHeight * 0.3; // 30% 지점에 걸리면 활성화
-
-                // 화면 30% 위치에 걸리는 섹션을 active로 판단
-                if (rect.top <= triggerLine && rect.bottom >= triggerLine) {
-                    activeId = id;
+                /* ===== 사이드바 고정 처리 ===== */
+                if (mainRect.top <= 150) {
+                    sidebar.classList.add("fixed");
+                } else {
+                    sidebar.classList.remove("fixed");
                 }
-            });
 
-            links.forEach(link => {
-                link.classList.remove("active");
-                if (link.getAttribute('href') === `#${activeId}`) {
-                    link.classList.add("active");
+                /* ===== HMain 벗어나면 숨김 ===== */
+                if (mainRect.top > 150 || mainRect.bottom < 500) {
+                    sidebar.style.opacity = "0";
+                    sidebar.style.pointerEvents = "none";
+                } else {
+                    sidebar.style.opacity = "1";
+                    sidebar.style.pointerEvents = "auto";
                 }
+
+                /* ===== active ===== */
+                let activeId = "";
+                const triggerLine = window.innerHeight * 0.1; // 화면 중앙
+
+                sectionMap.forEach(({ id, el }) => {
+                    const rect = el.getBoundingClientRect();
+
+                    // 중앙 기준에서 active 판정
+                    if (sectionCenter >= triggerLine - 50 && sectionCenter <= triggerLine + 50) {
+                        activeId = id;
+                    }
+                });
+
+                links.forEach(link => {
+                    link.classList.remove("active");
+                    if (link.getAttribute("href") === `#${activeId}`) {
+                        link.classList.add("active");
+                    }
+                });
             });
-        });
+        }
 
 
 
 
-        // $('#dynamic1').on('click', function () {
 
-        //     $(this).lightGallery({
-        //         mode: 'lg-fade',
-        //         dynamic: true,
-        //         dynamicEl: [{
-        //             "src": 'assets/img/responsive1.jpg',
-        //             'thumb': 'assets/img/responsive1.jpg',
 
-        //         }]
-        //     })
 
-        // });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     </script>

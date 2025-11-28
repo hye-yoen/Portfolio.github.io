@@ -1,5 +1,7 @@
 body {background-color:#f4f4f4; }
-#wrap {position: relative; width:100%; overflow: hidden;}
+#wrap {position: relative; width:100%; 
+  overflow: hidden;
+}
 .container {width:1170px; margin:0 auto; position: relative;}
 #scroll {position:fixed; top:200px; left:10px; z-index: 999999; display: none;} /* 스크롤탑값 */
 
@@ -9,8 +11,6 @@ body {background-color:#f4f4f4; }
 #contents > div {}
 #section1 {height:6000px;}
 
-/* .dotbg {background: url(../img/dotbg.png) repeat;display: block; width: 415px; height: 764px; background-position: center center; z-index: 2; position: absolute; top:0; left:415px;}
-.dotbg.bg2 {width:415px; height:3226px; top:1430px; left:415px;} */
 .main1 {height:1150px;}
 .main10{height: auto;}
 .main11 {
