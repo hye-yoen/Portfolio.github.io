@@ -37,7 +37,7 @@
 }
 
 .HMside .side-link.active {
-    color: #2962ff;
+    color: #11964d;
     font-weight: 700;
 }
 
@@ -93,8 +93,8 @@
     height: 60px;
     min-width: 60px;
     border-radius: 50%;
-    background: #eef3ff;
-    color: #2962ff;
+    background: #f1fffa;
+    color: #11964d;
     font-size: 28px;
     display: flex;
     align-items: center;
@@ -144,7 +144,7 @@
 }
 
 .Htable thead {
-    background: #f1f4ff;
+    background: #f1fffa;
 }
 
 .Htable th {
@@ -152,7 +152,7 @@
     font-weight: 700;
     text-align: left;
     border-bottom: 2px solid #d5ddff;
-    color: #2746d1;
+    color: #11964d;
 }
 
 .Htable td {
@@ -196,7 +196,7 @@
 .Hproblem-box {
     background: #fff;
     padding: 15px 18px;
-    border-left: 5px solid #2962ff;
+    border-left: 5px solid #11964d;
     border-radius: 6px;
     margin-bottom: 14px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
