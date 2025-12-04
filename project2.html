@@ -58,7 +58,7 @@
                 <div class="container">
                     <h1 class="wlogo">
                         <a href="index.html">
-                            <img src="./assets/img/wimg.png" alt="logo">
+                            <img src="./assets/img/wimgb.png" alt="logo">
                         </a>
                         <!-- <span class="ir">Wlogo</span> -->
                     </h1>
@@ -598,7 +598,7 @@
                 let minDistance = Infinity;
 
                 // 화면 10% 위치
-                const triggerLine = window.innerHeight * 0.1;
+                const triggerLine = window.innerHeight * 0.4;
 
                 sectionMap.forEach(({ id, el }) => {
                     const rect = el.getBoundingClientRect();
@@ -606,7 +606,7 @@
                     // 섹션 중앙값
                     const sectionCenter = rect.top + rect.height / 2;
 
-                    // 화면 10% 위치와의 거리 계산
+                    // 화면 40% 위치와의 거리 계산
                     const distance = Math.abs(sectionCenter - triggerLine);
 
                     // 가장 가까운 섹션 선택

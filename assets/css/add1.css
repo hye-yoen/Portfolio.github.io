@@ -207,8 +207,9 @@
 .skill-item.BN ul li:nth-child(1)::before { background-image: url('../img/svg/java.png'); }
 .skill-item.BN ul li:nth-child(2)::before { background-image: url('../img/svg/springboot.png'); }
 .skill-item.BN ul li:nth-child(3)::before { background-image: url('../img/svg/spring.png'); }
-.skill-item.BN ul li:nth-child(4)::before { background-image: url('../img/svg/springsecurity.png'); }
-.skill-item.BN ul li:nth-child(5)::before { background-image: url(''); }
+.skill-item.BN .ul li:nth-child(1)::before { background-image: url('../img/svg/springsecurity.png'); }
+.skill-item.BN .ul li:nth-child(2)::before { background-image: url('../img/svg/redis.png'); }
+
 
 /* Frontend */
 .skill-item.FN ul li:nth-child(1)::before { background-image: url('../img/svg/react.png'); }
@@ -218,19 +219,18 @@
 
 /* Database */
 .skill-item.DATA ul li:nth-child(1)::before { background-image: url('../img/svg/mysql.svg'); }
-.skill-item.DATA ul li:nth-child(2)::before { background-image: url(''); }
 
 /* DEV */
-.skill-item.DEV ul li:nth-child(1)::before { background-image: url(''); }
+.skill-item.DEV ul li:nth-child(1)::before { background-image: url('../img/svg/ec2.png'); }
 .skill-item.DEV ul li:nth-child(2)::before { background-image: url('../img/svg/linux.svg'); }
 .skill-item.DEV ul li:nth-child(3)::before { background-image: url('../img/svg/docker.svg'); }
 
 /* TOOL */
 .skill-item.TOOL ul li:nth-child(1)::before { background-image: url('../img/svg/git.svg'); }
-.skill-item.TOOL ul li:nth-child(2)::before { background-image: url(''); }
-.skill-item.TOOL ul li:nth-child(3)::before { background-image: url(''); }
-.skill-item.TOOL ul li:nth-child(4)::before { background-image: url(''); }
-.skill-item.TOOL ul li:nth-child(5)::before { background-image: url('../img/svg/IntelliJ.jpg'); }
+.skill-item.TOOL .ul li:nth-child(1)::before { background-image: url('../img/svg/postman.png');}
+.skill-item.TOOL .ul li:nth-child(2)::before { background-image: url('../img/svg/swagger.png'); }
+.skill-item.TOOL .ul li:nth-child(3)::before { background-image: url('../img/svg/vscode.jpg'); }
+.skill-item.TOOL .ul li:nth-child(4)::before { background-image: url('../img/svg/IntelliJ.jpg'); }
 
 
 
